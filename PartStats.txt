@@ -1,0 +1,20 @@
+ReactorS - Makes 50 energy per second. Mass: 50 Does not rotate.
+
+BlasterS - Consumes 100 energy per shot. 5 Seconds between each shot. ( 20 energy per sec ). Loading stage 0. Rotates at 90 degree angles. Mass: 20
+BlasterSLoad1 - Overlay over blaster for loading, stage 1
+BlasterSLoad2 - Overlay over blaster for loading, stage 2
+BlasterSLoad3 - Overlay over blaster for loading, stage 3
+BlasterSLoad4 - Overlay over blaster for loading, stage 4
+
+ThrusterXS - Extra Small 1 by 1 thruster, rotates at 90 degree angles, eats 10 energy per second when firing. Thrust = ? Mass: 25
+ThrusterS - Small 2 by 1 thruster, rotates at 90 degree angles, eats 30 energy per second when firing. Thrust = ? Mass: 50
+
+PwrLine1 - Straight Power Line. Mass: 4 Rotates at 90 degree angles.
+PwrLine2 - 90 degree turn Power Line. Mass: 4 Rotates at 90 degree angles.
+PwrLine3 - 3 way Power Line. Mass: 6 Rotates at 90 degree angles.
+PwrLine4 - 4 way Power Line. Mass: 8 Does not rotate.
+
+ArmorBlockS - 1 By 1 block of armor. No function. Mass: 50 Does not rotate.
+ArmorSlopeS - 1 By 1 slope of armor. No function. Mass: 25 Rotates at 90 degree angles.
+
+Mass - Transparent markert to visualise center of mass.

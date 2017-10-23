@@ -1,0 +1,22 @@
+{
+  "name": "shipyard",
+  "version": "0.1.0",
+  "description": "spaceshipyard",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint bin/*.js lib/*.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@drom/eslint-config": "^0.7.0",
+    "eslint": "^4.3.0"
+  },
+  "eslintConfig": {
+    "extends": "@drom/eslint-config/eslint4/node4"
+  },
+  "dependencies": {
+    "jsof": "^0.3.1",
+    "onml": "^0.4.1"
+  }
+}

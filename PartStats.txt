@@ -1,3 +1,18 @@
+
+C = Cap
+R = Reactor
+T = Thruster
+
+TCR
+
+T+R+
+   C
+
+ T CC
+T+RRR
+ T CC
+
+
 ReactorS - Makes 50 energy per second. Mass: 50 Does not rotate.
 
 BlasterS - Consumes 100 energy per shot. 5 Seconds between each shot. ( 20 energy per sec ). Loading stage 0. Rotates at 90 degree angles. Mass: 20

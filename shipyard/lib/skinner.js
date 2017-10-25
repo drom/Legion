@@ -21,7 +21,7 @@ function process (str) {
             }
         }
     });
-    const res = jsof.stringify(assets);
+    const res = 'module.exports = ' + jsof.stringify(assets) + ';';
     return res;
 }
 

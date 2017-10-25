@@ -9,11 +9,14 @@ function process (str) {
     const assets = {};
     onml.traverse(srcObj, {
         enter: function (node) {
-            if (
-                node.name === 'g' &&
-                node.attr.id !== undefined &&
-                !(node.attr.id.match('^layer'))
-            ) {
+            if (node.name === 'g' && node.attr.id !== undefined) {
+                if (node.attr.id.match('Ignore')) {
+                    this.skip();
+                    return;
+                }
+                if (node.attr.id.match('^layer')) {
+                    return;
+                }
                 assets[node.attr.id] = node.full;
             }
         }

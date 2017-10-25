@@ -1,11 +1,11 @@
 'use strict';
 
 const asciiParser = require('../lib/ascii-parser.js');
-const expect = require('chai').expect;
+const {test} = require('ava');
 
-describe('asciiParser', () => {
-    it('l1', done => {
-        expect(asciiParser(`
+test('asciiParser', t => {
+    t.deepEqual(
+        asciiParser(`
 TCR
 
 
@@ -16,8 +16,13 @@ T+R+
  T CC
 T+RRR
  T CC
-`)).to.deep.eq([[], [], []]);
-        done();
-    });
+`
+        ),
+        ([
+            [],
+            [],
+            []
+        ])
+    );
 });
 /* eslint-env mocha */

@@ -4,7 +4,7 @@
   "description": "spaceshipyard",
   "main": "index.js",
   "scripts": {
-    "test": "eslint bin/*.js lib/*.js && mocha test",
+    "test": "eslint bin/*.js lib/*.js && ava",
     "skinner": "./bin/skinner.js < ../Parts.svg > parts.js",
     "demo": "npm run skinner && browserify src/app.js > demo/bundle.js"
   },
@@ -12,10 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "@drom/eslint-config": "^0.7.0",
+    "ava": "^0.23.0",
     "browserify": "^14.5.0",
-    "chai": "^4.1.2",
-    "eslint": "^4.3.0",
-    "mocha": "^4.0.1"
+    "eslint": "^4.3.0"
   },
   "eslintConfig": {
     "extends": "@drom/eslint-config/eslint4/node4",

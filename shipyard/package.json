@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "jsof": "^0.3.1",
+    "lodash.clonedeep": "^4.5.0",
     "onml": "^0.4.1"
   }
 }

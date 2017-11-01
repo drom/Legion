@@ -3,14 +3,6 @@ C = Cap
 R = Reactor
 T = Thruster
 
-TCR
-
-T+R+
-   C
-
- T CC
-T+RRR
- T CC
 
 
 ReactorS - Makes 50 energy per second. Mass: 50 Does not rotate.

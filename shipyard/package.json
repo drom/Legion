@@ -6,7 +6,8 @@
   "scripts": {
     "test": "eslint bin/*.js lib/*.js && ava",
     "skinner": "./bin/skinner.js < ../Parts.svg > parts.js",
-    "demo": "npm run skinner && browserify src/app.js > demo/bundle.js"
+    "codemirror": "cp ./node_modules/codemirror/mode/markdown/markdown.js demo/markdown.js && cp ./node_modules/codemirror/theme/night.css demo/night.css && cp ./node_modules/codemirror/lib/codemirror.css demo/codemirror.css && cp ./node_modules/codemirror/lib/codemirror.js demo/codemirror.js && cp ./node_modules/codemirror/addon/search/search.js demo/search.js && cp node_modules/codemirror/addon/search/searchcursor.js searchcursor.js",
+    "demo": "npm run skinner && browserify src/app.js > demo/app.js && npm run codemirror"
   },
   "author": "",
   "license": "MIT",
@@ -14,6 +15,7 @@
     "@drom/eslint-config": "^0.7.0",
     "ava": "^0.23.0",
     "browserify": "^14.5.0",
+    "codemirror": "^5.31.0",
     "eslint": "^4.3.0"
   },
   "eslintConfig": {
